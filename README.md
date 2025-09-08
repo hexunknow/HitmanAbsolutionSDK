@@ -8,7 +8,8 @@
 ![HMA_POST](https://github.com/user-attachments/assets/0bfcc67d-f588-4b8a-98c8-f5108a2e4bcb)
 
 ## Install
-Extract the content of the `AbsolutionSDK-Release.zip` archive to `<drive>:\Program Files (x86)\Steam\steamapps\common\Hitman Absolution` \
+Extract the content of the `AbsolutionSDK-Release.zip` archive to `<drive>:\Program Files (x86)\Steam\steamapps\common\Hitman Absolution`
+
 <img width="1126" height="800" alt="image" src="https://github.com/user-attachments/assets/20bbf835-ccaa-4b4b-9bae-9a4048bbead5" />
 
 ## Usage

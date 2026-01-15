@@ -26,6 +26,8 @@ set(MODS
 	Noclip
 	HUD
 	Camera
+	Aimbot
+	Wallhack
 )
 
 foreach(MOD IN LISTS MODS)

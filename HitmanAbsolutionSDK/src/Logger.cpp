@@ -1,5 +1,6 @@
 #include <sstream>
 #include <iomanip>
+#include <chrono>
 
 #include "Logger.h"
 #include "Hooks.h"

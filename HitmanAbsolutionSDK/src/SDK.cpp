@@ -5,6 +5,7 @@
 #include <Glacier/Module/ZHitman5Module.h>
 #include <Glacier/Engine/ZApplicationEngineWin32.h>
 #include <Glacier/Engine/ZIniFile.h>
+#include <Glacier/ZGlobalBoneRegistry.h>
 
 #include "SDK.h"
 #include "Global.h"
@@ -39,6 +40,7 @@ LocalResourceIDsResolver** LocalResourceIDsResolverSingleton;
 ZCheckPointManager* CheckPointManager;
 ZHM5ActionManager* HM5ActionManager;
 ZEntityManager* EntityManager;
+ZGlobalBoneRegistry* GlobalBoneRegistry;
 bool IsEngineInitialized;
 void* ZTemplateEntityFactoryVFTbl;
 void* ZTemplateEntityBlueprintFactoryVFTbl;
@@ -172,6 +174,7 @@ void SDK::InitializeSingletons()
     CheckPointManager = reinterpret_cast<ZCheckPointManager*>(BaseAddress + 0xE21580);
     HM5ActionManager = reinterpret_cast<ZHM5ActionManager*>(BaseAddress + 0xD64C30);
     EntityManager = reinterpret_cast<ZEntityManager*>(BaseAddress + 0xE251A0);
+    GlobalBoneRegistry = reinterpret_cast<ZGlobalBoneRegistry*>(BaseAddress + 0xE25DA0);
     ZTemplateEntityFactoryVFTbl = reinterpret_cast<void*>(BaseAddress + 0xADC8EC);
     ZTemplateEntityBlueprintFactoryVFTbl = reinterpret_cast<void*>(BaseAddress + 0xADC714);
     ZAspectEntityFactoryVFTbl = reinterpret_cast<void*>(BaseAddress + 0xADB874);
